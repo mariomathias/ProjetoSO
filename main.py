@@ -14,6 +14,7 @@ class Nodo:
             return f'{self.dado}'
         return f'{self.dado}, {self.proximo.__repr__()}'
 
+@dataclass
 class Fila:
     primeiro: Nodo = None
     ultimo: Nodo = None
